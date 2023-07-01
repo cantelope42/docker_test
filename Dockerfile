@@ -9,6 +9,7 @@ WORKDIR .
 
 COPY package.json package.json
 RUN npm install
-RUN apt install -y cowsay mysql-server apache2 php7.4-gd php7.4-mcrypt php7.4-mbstring libapache2-mod-php7.4
+RUN apt install -y cowsay apache2 php7.4-gd php7.4-mcrypt php7.4-mbstring libapache2-mod-php7.4
+RUN apt install mariadb-common mariadb-server mariadb-client -y
 RUN a2enmod rewrite
 COPY . .
