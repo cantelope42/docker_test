@@ -8,7 +8,7 @@ RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-COPY package.json /usr/src/app
+#COPY package.json /usr/src/app
 RUN npm install
 RUN sudo apt-get install -y cowsay
 COPY . /usr/src/app
