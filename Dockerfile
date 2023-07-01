@@ -13,9 +13,9 @@ RUN apt-get update
 RUN apt-get install cowsay -y
 RUN apt-get install apache2 -y
 #RUN apt-get install php7.4-gd -y
-RUN apt-get install php7.4-mcrypt -y
-RUN apt-get install php7.4-mbstring -y
-RUN apt-get install libapache2-mod-php7 -y
+#RUN apt-get install php7.4-mcrypt -y
+#RUN apt-get install php7.4-mbstring -y
+#RUN apt-get install libapache2-mod-php7 -y
 RUN apt-get install mariadb-common mariadb-server mariadb-client -y
 RUN a2enmod rewrite
 COPY . .
