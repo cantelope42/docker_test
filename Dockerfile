@@ -19,3 +19,7 @@ RUN apt-get install apache2 -y
 RUN apt-get install mariadb-common mariadb-server mariadb-client -y
 RUN a2enmod rewrite
 COPY . .
+
+EXPOSE 80
+EXPOSE 443
+EXPOSE 3306
