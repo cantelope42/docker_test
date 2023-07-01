@@ -10,5 +10,5 @@ WORKDIR /usr/src/app
 
 COPY package.json /usr/src/app
 RUN npm install
-RUN sudo apt-get install -y cowsay
+RUN apt install -y cowsay
 COPY . /usr/src/app
